@@ -39,6 +39,7 @@ class DataIngestion:
             logging.info("Data ingestion complete")
             return (self.ingestion_config.train_data_path, self.ingestion_config.test_data_path)
             
+            
         except Exception as e:
             logging.error("Error occurred during data ingestion")
             raise CustomException(e, sys)
